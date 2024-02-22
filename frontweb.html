@@ -1,0 +1,60 @@
+<!DOCTYPE html>    
+<html>
+    <head>
+        <title>Front End</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Replace "diegogram-high-resolution-logo.png" with the actual filename of your image -->
+        <div class="banner">
+            <img src="diegogram-high-resolution-logo.png" alt="Your Banner">
+        </div>
+
+        <!-- Embed Thunkable Profile App -->
+        <div class="thunkable-app">
+            <!-- Use the correct URL for the Thunkable project in the iframe src attribute -->
+            <iframe width='600px' height='650px' src="https://thunkable.site/w/xEBFTf9_981sG0xXLjXO2" title="Thunkable App"></iframe>
+            
+            <!-- Add a heading for the Thunkable project link -->
+            <h2>
+                <a href="https://thunkable.site/w/xEBFTf9_981sG0xXLjXO2" target="_blank">
+                    Thunkable Project: My Project Name
+                </a>
+            </h2>
+
+            <!-- Hardcoded data -->
+            <script>
+                var user1 = {
+                    name: "Diego",
+                    age: "21",
+                    ethnicity: "5'7\"",
+                    height: "Hispanic",
+                    image: "http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1708463843/h4kviqfkvali4rsajazt.png"
+                };
+
+                var user2 = {
+                    name: "OzzyMan",
+                    age: "21",
+                    ethnicity: "6'10\"",
+                    height: "African American",
+                    image: "http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1708464076/gfzxnkfoevy1rrvwf7gf.png"
+                };
+
+                // Display the data
+                document.write("<p>User 1:</p>");
+                document.write("<p>Name: " + user1.name + "</p>");
+                document.write("<p>Age: " + user1.age + "</p>");
+                document.write("<p>Ethnicity: " + user1.ethnicity + "</p>");
+                document.write("<p>Height: " + user1.height + "</p>");
+                document.write("<img src='" + user1.image + "' alt='User 1 Image'>");
+
+                document.write("<p>User 2:</p>");
+                document.write("<p>Name: " + user2.name + "</p>");
+                document.write("<p>Age: " + user2.age + "</p>");
+                document.write("<p>Ethnicity: " + user2.ethnicity + "</p>");
+                document.write("<p>Height: " + user2.height + "</p>");
+                document.write("<img src='" + user2.image + "' alt='User 2 Image'>");
+            </script>
+        </div>
+    </body>
+</html>
